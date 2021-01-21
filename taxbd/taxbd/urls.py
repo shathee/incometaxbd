@@ -18,8 +18,10 @@ from django.urls import path
 from django.conf.urls import include
 
 from frontendpages import urls as frontendpages_urls
+from taxoffices import urls as taxoffices_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(frontendpages_urls)),
+    path('', include(taxoffices_urls)),
 ]

@@ -16,3 +16,5 @@ class Profile(models.Model):
     # tax_circle = 
     # tax_circle = 
     
+    def __str__(self):
+        return 'Profile: {}'.format(self.name)

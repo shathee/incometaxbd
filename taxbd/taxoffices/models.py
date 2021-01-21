@@ -9,3 +9,6 @@ class Zone(models.Model):
     acc_code_other_fee = models.CharField(max_length=20, blank=True, null=True)
     phone = models.CharField(max_length=15, blank=True, null=True)
     address = models.TextField(max_length=50, blank=True, null=True)
+
+    def __str__(self):
+        return 'Zone: {}'.format(self.name)

@@ -6,8 +6,8 @@ from django.shortcuts import render
 def home(*args, **kwargs):
     return HttpResponse("Welcome to Your Tax Home")
 
-def about():
+def about(*args, **kwargs):
     return HttpResponse("Your Tax About")
     
-def contact():
+def contact(*args, **kwargs):
     return HttpResponse("Your Tax Contact")
